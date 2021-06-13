@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a804547225.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="estilos.css">
+    <title>Growing Strong - Catalogo</title>
+</head>
+<body>
+
+    <div class="contenedor">
+        <header>
+            <div class="logo">
+                <img src="img/logo_grow.jpeg" alt="">
+                <h1>Growing Strong</h1>
+                <p>Catalogo</p>
+            </div>
+            <form action="">
+                <input type="text" class="barra-busqueda" id="barra-busqueda" placeholder="Buscar">
+            </form>
+            <div class="categorias" id="categorias">
+                <a href="#" class="activo">Todos</a>
+                <a href="#">Fertilizantes</a>
+                <a href="#">Carpas</a>
+                <a href="#">Macetas</a>
+                <a href="#">Luces</a>
+                <a href="#">Emilio</a>
+            </div>
+        </header>
+
+        <section class="grid" id="grid">
+            <div class="item" 
+                data-categoria="fertilizantes"
+                data-etiquetas="fertilizantes eden fertis fafu"
+                data-descripcion="4 PACK EDEN - $900"
+            >
+                <div class="item-contenido">
+                    <img src="img/fertis1.jpeg" alt="">
+                </div>
+            </div>
+
+            <div class="item" 
+                data-categoria="carpas"
+                data-etiquetas="carpas indoor grow"
+                data-descripcion="CARPA 1x1x2 - $20.000"
+            >
+                <div class="item-contenido">
+                    <img src="img/carpa1.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="item" 
+                data-categoria="macetas"
+                data-etiquetas="macetas tierra plantas"
+                data-descripcion="MACETAS GEOTEXTILES - $200"
+            >
+                <div class="item-contenido">
+                    <img src="img/macetas1.jpeg" alt="">
+                </div>
+            </div>
+
+            <div class="item" 
+                data-categoria="luces"
+                data-etiquetas="luces led grow watts"
+                data-descripcion="LUCES LED 400W - $9.000"
+            >
+                <div class="item-contenido">
+                    <img src="img/luces1.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="item" 
+                data-categoria="emilio"
+                data-etiquetas="emilio"
+                data-descripcion="EMILIO - No tiene precio"
+            >
+                <div class="item-contenido">
+                    <img src="img/emilio2.jpeg" alt="">
+                </div>
+            </div>
+
+        </section>
+
+        <section class="overlay" id="overlay">
+            <div class="contenedor-img">
+                <button id="btn-cerrar-popup"><i class="fas fa-times"></i></button>
+                <img src="" alt="">
+            </div>
+            <p class="descripcion"></p>
+        </section>
+        
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/web-animations-js@2.3.2/web-animations.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/muuri@0.9.4/dist/muuri.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
